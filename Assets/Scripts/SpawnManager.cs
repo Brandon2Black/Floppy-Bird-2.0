@@ -6,7 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
 
     public GameObject pipePrefab;
-    float randomHeight = 0.5f;
+    float randomHeight = 0.8f;
     // Start is called before the first frame update
 
     void SpawnPipes()
@@ -16,7 +16,7 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnPipes", 2.0f, 3.0f);
+        InvokeRepeating("SpawnPipes", 2.0f, 2.5f);
     }
 
     
