@@ -6,18 +6,27 @@ public class MoveLeft : MonoBehaviour
 {
 
     public float Speed = 2.5f;
+    PlayerController playerControllerScript;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        playerControllerScript = GameObject.Find("Red_Bird_0").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-      //pipe movement
+      if(playerControllerScript.isAlive == true)
+      {
       transform.Translate(Vector2.left * Time.deltaTime * Speed);
+      }
+      else
+      {
+        Speed = 0;
+      }
+      //pipe movement
 
+    
         
     }
 }
