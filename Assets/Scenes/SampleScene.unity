@@ -1010,6 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreUI: {fileID: 1786220416}
+  isAlive: 0
 --- !u!58 &1178131602
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1023,9 +1024,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0026633234}
+  m_Offset: {x: 0, y: 0.016258087}
   serializedVersion: 2
-  m_Radius: 0.1678589
+  m_Radius: 0.10944882
 --- !u!1 &1228180303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,6 +2220,14 @@ PrefabInstance:
     - target: {fileID: 2956210647093515856, guid: 145cd02b46d7d458ba2b5b69bbcb0cc6, type: 3}
       propertyPath: m_Name
       value: Pipes 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738189348420635640, guid: 145cd02b46d7d458ba2b5b69bbcb0cc6, type: 3}
+      propertyPath: m_TagString
+      value: Pipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465536840461440524, guid: 145cd02b46d7d458ba2b5b69bbcb0cc6, type: 3}
+      propertyPath: m_TagString
+      value: Pipe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 145cd02b46d7d458ba2b5b69bbcb0cc6, type: 3}
