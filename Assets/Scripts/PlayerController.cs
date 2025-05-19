@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public bool isAlive;
     public TextMeshProUGUI gameOverText;
     AudioSource audioSource;
-
+    public AudioClip audioClip;
    
     // Start is called before the first frame update
   void Start()
@@ -63,7 +63,7 @@ public void RestartGame()
        if(Input.GetKeyDown(KeyCode.Space) && isAlive == true)
     {
 	bird.AddForce(new Vector2(0,1) * 200);
-    //audioSource.PlayOneShot();
+    audioSource.PlayOneShot(audioClip);
     }   
 
     if (isAlive == false)
