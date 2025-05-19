@@ -1416,6 +1416,7 @@ MonoBehaviour:
   scoreUI: {fileID: 1786220416}
   isAlive: 0
   gameOverText: {fileID: 1589077407}
+  audioClip: {fileID: 8300000, guid: 640858530eab543be90da9a794f04a71, type: 3}
 --- !u!58 &1178131602
 CircleCollider2D:
   m_ObjectHideFlags: 0
