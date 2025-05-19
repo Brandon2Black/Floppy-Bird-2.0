@@ -7,18 +7,23 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+    
     Rigidbody2D bird;
     int score = 0;
     public Text scoreUI;
     public bool isAlive;
     public TextMeshProUGUI gameOverText;
+    AudioSource audioSource;
+
+   
     // Start is called before the first frame update
   void Start()
 {
    bird = GetComponent<Rigidbody2D>();
 
  isAlive = true;
-
+ audioSource = GetComponent<AudioSource>();
 }
 
 public void GameOver()
@@ -58,6 +63,7 @@ public void RestartGame()
        if(Input.GetKeyDown(KeyCode.Space) && isAlive == true)
     {
 	bird.AddForce(new Vector2(0,1) * 200);
+    //audioSource.PlayOneShot();
     }   
 
     if (isAlive == false)
