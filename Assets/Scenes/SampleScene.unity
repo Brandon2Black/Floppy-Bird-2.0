@@ -1417,6 +1417,10 @@ MonoBehaviour:
   isAlive: 0
   gameOverText: {fileID: 1589077407}
   audioClip: {fileID: 8300000, guid: 640858530eab543be90da9a794f04a71, type: 3}
+  audioClip2: {fileID: 8300000, guid: 4806ac7d0e7fd439d9b548019dbca34b, type: 3}
+  audioClip3: {fileID: 8300000, guid: 1542fb031ad11486ea1349cfd8306394, type: 3}
+  audioClip4: {fileID: 0}
+  audioClip5: {fileID: 0}
 --- !u!58 &1178131602
 CircleCollider2D:
   m_ObjectHideFlags: 0

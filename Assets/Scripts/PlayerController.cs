@@ -16,7 +16,11 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     AudioSource audioSource;
     public AudioClip audioClip;
-   
+    public AudioClip audioClip2;
+    public AudioClip audioClip3;
+    public AudioClip audioClip4;
+    public AudioClip audioClip5;
+
     // Start is called before the first frame update
   void Start()
 {
@@ -48,6 +52,8 @@ void OnTriggerEnter2D(Collider2D other)
         score += 1;
 
         scoreUI.text = score.ToString();
+
+        audioSource.PlayOneShot(audioClip3);
     }
 }
 
@@ -69,6 +75,7 @@ public void RestartGame()
     if (isAlive == false)
     {
         GameOver();
+        audioSource.PlayOneShot(audioClip2);
     }
     }
 }
