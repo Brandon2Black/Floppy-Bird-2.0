@@ -42,7 +42,7 @@ void OnCollisionEnter2D(Collision2D collision)
     if(collision.gameObject.CompareTag("Pipe"))
     {
     isAlive = false;
-     audioSource.PlayOneShot(audioClip4);
+    
     }
 
 }
@@ -79,6 +79,7 @@ public void RestartGame()
     {
         GameOver();
         audioSource.PlayOneShot(audioClip2);
+         audioSource.PlayOneShot(audioClip4);
     }
     }
 }
