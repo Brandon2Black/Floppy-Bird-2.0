@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 public void GameOver()
 {
     gameOverText.gameObject.SetActive(true);
-    bird.constraints = RigidbodyConstraints2D.FreezePositionY;
+    bird.constraints = RigidbodyConstraints2D.FreezePosition;
     GetComponent<Animator>().enabled = false;
 }
 
