@@ -6,7 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
 
     public GameObject pipePrefab;
-    float randomHeight = 0.8f;
+    float randomHeight = 1.5f;
     // Start is called before the first frame update
     PlayerController PlayerControllerScript;
 
