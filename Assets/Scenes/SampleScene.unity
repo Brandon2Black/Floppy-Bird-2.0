@@ -458,7 +458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &333311318
 RectTransform:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 719.4, y: 261.1}
+  m_AnchoredPosition: {x: 953, y: 478}
   m_SizeDelta: {x: 191.2812, y: 53.963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333311319
@@ -525,8 +525,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -22.985657}
+  m_margin: {x: 0, y: -6.456909, z: 0, w: -22.985657}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fce0db45a49940f987e1966944d6620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreUI: {fileID: 1786220416}
+  scoreUI: {fileID: 333311319}
   isAlive: 0
   gameOverText: {fileID: 1589077407}
   audioClip: {fileID: 8300000, guid: 640858530eab543be90da9a794f04a71, type: 3}
@@ -2326,7 +2326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1786220415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2681,7 +2681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 755, y: 482.1}
+  m_AnchoredPosition: {x: 685, y: 482.1}
   m_SizeDelta: {x: 191.2812, y: 53.963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901755127
@@ -2733,8 +2733,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2941,6 +2941,10 @@ PrefabInstance:
     - target: {fileID: 6028222073542731798, guid: 9133862c2486f4fa7acca351dd1bc90b, type: 3}
       propertyPath: m_Name
       value: ScoreNumber
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028222073542731798, guid: 9133862c2486f4fa7acca351dd1bc90b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6028222073542731799, guid: 9133862c2486f4fa7acca351dd1bc90b, type: 3}
       propertyPath: m_Pivot.x

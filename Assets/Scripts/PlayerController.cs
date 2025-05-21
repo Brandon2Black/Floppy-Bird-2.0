@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     
     Rigidbody2D bird;
     int score = 0;
-    public Text scoreUI;
+    public TextMeshProUGUI scoreUI;
     public bool isAlive;
     public TextMeshProUGUI gameOverText;
     AudioSource audioSource;
