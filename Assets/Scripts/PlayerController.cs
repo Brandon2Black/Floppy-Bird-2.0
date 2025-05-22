@@ -35,6 +35,7 @@ public void GameOver()
     gameOverText.gameObject.SetActive(true);
     bird.constraints = RigidbodyConstraints2D.FreezePosition;
     GetComponent<Animator>().enabled = false;
+
 }
 
 void OnCollisionEnter2D(Collision2D collision)
@@ -80,6 +81,7 @@ public void RestartGame()
         GameOver();
         audioSource.PlayOneShot(audioClip2);
          audioSource.PlayOneShot(audioClip4);
+      // GetComponent<AudioSource>().AudioClip = "";
     }
     }
 }
